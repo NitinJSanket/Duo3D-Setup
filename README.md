@@ -15,7 +15,7 @@ This repository helps in setting up the required software on Ubuntu 16.04 to wor
 		`sudo apt-get install build-essential qt5-default git cmake`
 	- Install the driver
 		You must build and load the DUO Kernel Module (`duo.ko`) for your version of Linux kernel. Go into the `CL-DUO3D-LIN-1.1.0.30/DUODriver/` folder and run the following:
-		`chmod u+x duodriver.run
+		`chmod u+x duodriver.run <br>
 		./duodriver.run`
 	- You can now use these commands to load, unload or install the module:
 	Load the driver using `sudo insmod duo-1024.ko`. 
