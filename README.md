@@ -15,8 +15,11 @@ This repository helps in setting up the required software on Ubuntu 16.04 to wor
 		`sudo apt-get install build-essential qt5-default git cmake`
 	- Install the driver
 		You must build and load the DUO Kernel Module (`duo.ko`) for your version of Linux kernel. Go into the `CL-DUO3D-LIN-1.1.0.30/DUODriver/` folder and run the following:
-		```chmod u+x duodriver.run
-		./duodriver.run```
+		
+		```
+		chmod u+x duodriver.run
+		./duodriver.run
+		```
 	- You can now use these commands to load, unload or install the module:
 	Load the driver using `sudo insmod duo-1024.ko`. 
 
@@ -25,12 +28,15 @@ This repository helps in setting up the required software on Ubuntu 16.04 to wor
 	If you need to ever unload the driver, use `sudo rmmod -f duo`.
 
 	Once you determined that duo-1024 works, you can install the driver using following commands:
-	```sudo cp duo-1024.ko /lib/modules/$(uname -r)/kernel/drivers/duo.ko
+	```
+	sudo cp duo-1024.ko /lib/modules/$(uname -r)/kernel/drivers/duo.ko
 	echo 'duo' | sudo tee -a /etc/modules > /dev/null
-	sudo depmod```
+	sudo depmod
+	```
 
 	If you are using the duo-512 then use the following commands:
-	```sudo cp duo-512.ko /lib/modules/$(uname -r)/kernel/drivers/duo.ko
+	```
+	sudo cp duo-512.ko /lib/modules/$(uname -r)/kernel/drivers/duo.ko
 	echo 'duo' | sudo tee -a /etc/modules > /dev/null
 	sudo depmod
 	```
