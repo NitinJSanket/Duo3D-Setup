@@ -3,7 +3,7 @@ Setting up the required software for Duo3D Camera
 
 This repository helps in setting up the required software on Ubuntu 16.04 to work with the Duo3D MLX camera. 
 
-[<img src="assets/Duo3D.PNG" width="480" />]() <br>
+[<img src="assets/Duo3D.png" width="480" />]() <br>
 
 **Most of this documentation is copied from the DUO's official manual.**
 
